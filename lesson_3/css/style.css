@@ -1,0 +1,82 @@
+/* Обращение напрямую */
+* {
+	font-size: 20px;
+}
+
+#cptr_1 {
+	color: blueviolet;
+}
+
+.list-item.item-list {
+	color: #ffd700;
+}
+
+.advantages,
+.disadvantages {
+	color: coral;
+}
+
+h1,
+h2 {
+	font-size: 30px;
+}
+
+/* Обращение через вложенность */
+li.list-item {
+	color: #0057b8;
+}
+
+.list_cptr_6 li {
+	color: darkgreen;
+}
+
+.list_cptr_6 .list_item_cptr_6{
+    color: cornflowerblue;
+}
+
+.color-gray *{
+    color: gray;
+}
+
+.ul_parent>li{
+    color: salmon;
+}
+
+.example~li{
+    color: aqua;
+} 
+
+.example2+li{
+    color: fuchsia;
+}
+
+/* Font styles */
+.header-text {
+	color: green;
+	font-size: 48px;
+}
+h2 {
+	color: crimson;
+}
+a {
+	color: indianred;
+}
+span {
+	color: red;
+}
+.copyright-ref {
+	font-size: 10px;
+	color: #000;
+}
+
+/* Images styles */
+.css-img {
+	width: 100%;
+	height: 200px;
+}
+.rocket {
+	height: 50px;
+}
+.wiki-logo {
+	height: 20px;
+}
