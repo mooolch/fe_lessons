@@ -80,7 +80,6 @@ footer {
 	font-family: "FirstTimeWriting";
 	font-size: 24px;
 	color: #000;
-	
 }
 
 .footer_wrapper {
@@ -159,16 +158,16 @@ h2 {
 }
 /* ========================================================= */
 
-.margin {
-	outline: 3px dashed red;
+.block2 {
+	outline: 3px dashed #ff0000;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 30px;
 }
 
-.margin h2 {
+.block2 h2 {
 	margin-bottom: 50px;
-	outline: 3px dashed red;
+	outline: 3px dashed #ff0000;
 }
 
 .list {
@@ -192,7 +191,7 @@ h2 {
 	background-color: #ff4500;
 }
 
-.margin p {
+.block2 p {
 	max-width: 500px;
 	padding: 20px 80px 20px 60px;
 	margin: 0 auto;
@@ -205,7 +204,7 @@ h2 {
 		rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
 }
 
-.margin span {
+.block2 span {
 	padding: 50px;
 	max-width: 500px;
 	display: block;
