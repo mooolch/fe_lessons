@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+@font-face {
+	font-family: "FirstTimeWriting";
+	src: url("../fonts/FirstTimeWriting.woff2") format("woff2"), url("../fonts/FirstTimeWriting.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
