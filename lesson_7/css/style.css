@@ -1,0 +1,344 @@
+body {
+	font-family: "Lato";
+	font-size: 16px;
+	line-height: 26px;
+	color: #424551;
+}
+
+[class*="_container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+}
+
+/* =============== HEADER STYLES =============== */
+.header_container {
+	padding: 20px 0px 20px 0px;
+	font-weight: 700;
+	font-size: 0;
+	margin-bottom: 60px;
+}
+
+.header_container * {
+	display: inline-block;
+}
+
+.logo {
+	margin-right: 60px;
+}
+
+.menu {
+	margin-right: 185px;
+}
+
+.menu li {
+	font-size: 16px;
+	margin-right: 40px;
+	vertical-align: middle;
+}
+
+.menu li:hover {
+	color: #ff0000;
+}
+
+.actions {
+	font-size: 16px;
+}
+
+.button {
+	padding: 0px 40px;
+	background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+	border-radius: 4px;
+	line-height: 52px;
+	letter-spacing: 0.5px;
+	color: #ffffff;
+	margin-right: 36px;
+}
+
+.button:hover {
+	color: #000;
+}
+
+.login:hover {
+	color: #ff0000;
+}
+
+.register:hover {
+	color: #ff0000;
+}
+
+.login, .register {
+	line-height: 18px;
+}
+
+.login img {
+	margin-right: 3px;
+}
+
+/* =============== MAIN STYLES =============== */
+.main_container {
+	margin-bottom: 50px;
+}
+
+.main_content {
+	max-width: 810px;
+}
+
+.article * {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.article {
+	margin-bottom: 12px;
+}
+
+.colored {
+	font-weight: 700;
+	color: #ff3f3a;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 60px;
+	color: #1e212c;
+	margin-bottom: 26px;
+}
+
+.time_socials * {
+	vertical-align: middle;
+}
+
+.time_socials {
+	margin-bottom: 40px;
+}
+
+.time_socials div {
+	display: inline-block;
+}
+
+.date img {
+	margin-right: 8px;
+}
+
+.date {
+	margin-right: 24px;
+}
+
+.time img {
+	margin-right: 8px;
+}
+
+.time {
+	margin-right: 400px;
+}
+
+.socials {
+	font-weight: 700;
+	color: #1e212c;
+}
+.socials a {
+	margin-left: 10px;
+	line-height: 1;
+}
+
+.main_image img {
+	max-width: 100%;
+}
+
+.main_image {
+	margin-bottom: 60px;
+}
+
+.text_black {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	color: #1e212c;
+	margin-bottom: 24px;
+}
+
+.text_black + p {
+	margin-bottom: 24px;
+}
+
+.main_text {
+	margin-bottom: 48px;
+}
+
+.text_quote {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 48px;
+	color: #1e212c;
+	padding-left: 58px;
+	background: url("../img/braces.svg") 0 8px no-repeat;
+}
+
+.main_text2 .text {
+	margin-bottom: 24px;
+}
+
+.main_text2 {
+	margin-bottom: 60px;
+}
+
+.main_text2 ul {
+	margin-bottom: 24px;
+}
+
+.main_text2 li {
+	padding-left: 32px;
+	margin-bottom: 4px;
+	background: url("../img/red_icon.svg") 0 6px no-repeat;
+}
+
+.tags_socials div {
+	display: inline-block;
+}
+.tags span {
+	font-weight: 700;
+	color: #1e212c;
+}
+
+.tags a {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	color: #787a80;
+	padding: 5.5px 16px;
+	border-radius: 4px;
+	margin-left: 12px;
+	border: 1px solid rgba(215, 218, 221, 1);
+}
+
+.tags {
+	margin-right: 270px;
+}
+
+.tags a:hover {
+	color: #ff0000;
+	border: 1px solid #ff00005e;
+}
+
+/* =============== FOOTER STYLES =============== */
+.footer_wallpaper {
+	background: linear-gradient(
+		90deg,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(29, 195, 253, 0.16850490196078427) 56%,
+		rgba(252, 176, 69, 1) 100%
+	);
+}
+
+.footer_container {
+	padding-top: 20px;
+}
+
+h2 {
+	line-height: 48px;
+	font-size: 48px;
+	font-weight: 900;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.block {
+	border-radius: 15px;
+	margin-bottom: 50px;
+	padding: 15px;
+	color: #ffffff;
+}
+
+.one {
+	height: 350px;
+	width: 740px;
+	background: url("../img/dymchatiyleopard.jpg");
+}
+
+.one_text {
+	margin-top: 200px;
+}
+
+/* ================================== */
+.two, .four,
+.five {
+	height: 350px;
+	width: 740px;
+}
+
+.two {
+	margin: 0 0 50px auto;
+	background: url("../img/dymchatiyleopard.jpg") 50% 0 no-repeat;
+}
+
+.two_text {
+	margin-top: 200px;
+}
+
+.three {
+	padding: 50px;
+	background: url("../img/eyes.jpg") center fixed;
+	width: 100%;
+	height: 300px;
+}
+
+.four {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	background: url("../img/leopard.jpg") 0 0 / cover;
+}
+
+.five {
+	background: url("../img/leopard.jpg") 0 0 / contain no-repeat;
+}
+
+/* ================================== */
+.six, .seven, .eight{
+		margin: 0 auto;
+	margin-bottom: 50px;
+	height: 550px;
+	width: 1040px;
+
+}
+
+.six {
+	background: url("../img/cup.jpg") 100% 0% no-repeat, url("../img/cup.jpg") 50% 50% no-repeat,
+		url("../img/cup.jpg") 0% 100% no-repeat, url("../img/winter.jpg") 0 0 / cover;
+}
+
+.seven {
+	background: url("../img/cup.jpg") center repeat-x, rgba(197, 191, 191, 0.712);
+}
+
+.eight {
+	background: url("../img/cup.jpg") center repeat-y, rgba(197, 191, 191, 0.712);
+}
+
+/* ===============Button=================== */
+.end {
+	text-align: center;
+	width: 100%;
+	height: 250px;
+	background: url("../img/end.png") 50% 100% fixed, black;
+	background-repeat: no-repeat;
+}
+
+.end a {
+	font-weight: 700;
+	margin-top: 30px;
+	display: inline-block;
+	text-transform: uppercase;
+	background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+	padding: 5px 30px;
+	border-radius: 4px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	color: #ffffff;
+}
+
+.end a:hover {
+	color: #f75e05;
+	background: #fffffff3;
+}
