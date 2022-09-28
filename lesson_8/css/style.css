@@ -1,0 +1,698 @@
+html {
+	scroll-padding-top: 100px;
+}
+
+body {
+	font-family: "Lato";
+	line-height: 25.6px;
+	color: #424551;
+}
+
+[class*="_container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+}
+
+[class*="main_text"] {
+	max-width: 600px;
+}
+
+.black {
+	color: #1e212c;
+}
+
+/* ========== HEADER STYLES ========== */
+.header {
+	background: rgba(254, 220, 211, 1);
+}
+
+.header_container {
+	padding: 20px 0px 20px 0px;
+}
+.navigation * {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.navigation {
+	font-weight: 700;
+	line-height: 160%;
+}
+
+.logo {
+	margin-right: 60px;
+}
+.menu li:not(:last-child) {
+	margin-right: 40px;
+}
+
+.menu {
+	margin-right: 200px;
+}
+
+.button {
+	padding: 0px 40px;
+	margin-right: 36px;
+	background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+	border-radius: 4px;
+	line-height: 52px;
+	letter-spacing: 0.5px;
+	color: #ffffff;
+}
+
+.navigation .button:hover {
+	color: #424551;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: rgba(255, 63, 58, 1);
+	text-decoration: underline;
+}
+
+.login::before {
+	content: "";
+	background: url("../img/profile.svg") 0 0 no-repeat;
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+.login:hover::before {
+	content: "";
+	background: url("../img/profile_active.svg") 0 0 no-repeat;
+}
+
+/* ========== MAIN STYLES ========== */
+
+.header_subtitle {
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 150%;
+	letter-spacing: 1px;
+	color: #ff3f3a;
+	text-align: center;
+}
+.header_title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	text-align: center;
+	max-width: 1020px;
+	margin: 0 auto;
+}
+
+.headers_bg {
+	background: rgba(254, 220, 211, 1);
+}
+.headers {
+	padding: 60px 0px 60px 0px;
+}
+
+.headers :not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.main_container {
+	margin-bottom: 70px;
+	/* С девушкой будет крвсивше)) */
+	background: url("../img/fake.png") 0 100% / 125px 75px no-repeat, url("../img/curator-image.png") 0 100% no-repeat,
+		url("../img/fake.png") 94% 10% / 125px 75px no-repeat, url("../img/sidebar.png") 100% 19% no-repeat;
+}
+
+.main_container {
+	padding-top: 120px;
+}
+.main_cotent_left {
+	max-width: 600px;
+	margin-bottom: 100px;
+}
+
+/* ===== LEFT CONTENT ===== */
+
+.left_title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	margin-bottom: 40px;
+}
+.left_text:not(:last-child) {
+	margin-bottom: 48px;
+}
+.left_subtitle {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 150%;
+	margin-bottom: 24px;
+}
+.left_list li {
+	margin-bottom: 4px;
+	padding-left: 32px;
+}
+
+.left_list li::before {
+	content: "";
+	background: url("../img/check_active.svg") 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 16px;
+	margin-left: -32px;
+}
+
+.left_list li::before {
+	vertical-align: middle;
+}
+
+.left_list li:last-child {
+	margin-bottom: 0px;
+}
+
+/* ===== RIGHT CONTENT ===== */
+
+.main_content_right {
+	max-width: 600px;
+	margin: 0 0 0 auto;
+	/* Чтобы красиво девушку разместить)) */
+	padding-bottom: 75px;
+}
+
+.right_title {
+	font-weight: 700;
+	line-height: 150%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+.lector_name {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	margin-bottom: 16px;
+}
+
+.lector_position {
+	font-size: 20px;
+	line-height: 150%;
+	color: #787a80;
+	margin-bottom: 32px;
+}
+
+.right_list {
+	margin-bottom: 32px;
+}
+
+.right_list li {
+	margin-bottom: 4px;
+}
+
+.right_list li::before {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 8px;
+	vertical-align: text-bottom;
+}
+
+.right_list li:nth-child(1)::before {
+	content: "";
+	background: url("../img/star.svg") 0 0 no-repeat;
+}
+.right_list li:nth-child(2)::before {
+	content: "";
+	background: url("../img/play.svg") 0 0 no-repeat;
+}
+.right_list li:nth-child(3)::before {
+	content: "";
+	background: url("../img/profile_small.svg") 0 0 no-repeat;
+}
+
+.right_list li:last-child {
+	margin-bottom: 0px;
+}
+
+.right_text {
+	margin-bottom: 40px;
+}
+
+/* ===== SOCIAL LINKS ===== */
+
+.socials * {
+	display: inline-block;
+}
+
+.socials a:not(:last-child) {
+	margin-right: 20px;
+}
+
+.socials a::before {
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+.socials a:nth-child(1)::before {
+	content: "";
+	background: url("../img/facebook.svg") 0 0 no-repeat;
+}
+.socials a:nth-child(1):hover::before {
+	content: "";
+	background: url("../img/facebook_active.svg") 0 0 no-repeat;
+}
+
+.socials a:nth-child(2)::before {
+	content: "";
+	background: url("../img/behance.svg") 0 0 no-repeat;
+}
+.socials a:nth-child(2):hover::before {
+	content: "";
+	background: url("../img/behance_active.svg") 0 0 no-repeat;
+}
+
+.socials a:nth-child(3)::before {
+	content: "";
+	background: url("../img/twitter.svg") 0 0 no-repeat;
+}
+.socials a:nth-child(3):hover::before {
+	content: "";
+	background: url("../img/twitter_active.svg") 0 0 no-repeat;
+}
+
+.socials a:nth-child(4)::before {
+	content: "";
+	background: url("../img/linked-in.svg") 0 0 no-repeat;
+}
+.socials a:nth-child(4):hover::before {
+	content: "";
+	background: url("../img/linked-in_active.svg") 0 0 no-repeat;
+}
+
+/* ========== FOOTER STYLES ========== */
+.footer_menu {
+	min-height: 150px;
+	background: url("../img/footer_img.jpg") center no-repeat, rgb(0, 0, 0);
+}
+
+.footer_links {
+	padding-top: 10px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.footer_links a {
+	display: inline-block;
+	color: white;
+	border-radius: 30px;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.footer_links a:first-child {
+	margin-left: 225px;
+	padding-bottom: 50px;
+}
+.footer_links a:first-child:hover {
+	color: rgb(211, 32, 32);
+}
+
+.footer_links a:last-child {
+	margin-left: 180px;
+	padding-bottom: 75px;
+}
+.footer_links a:last-child:hover {
+	color: rgb(52, 52, 180);
+}
+
+/* ========== HOMEWORk STYLES ========== */
+
+.homework {
+	padding: 20px 0px 2px 0px;
+}
+
+/* ===== DO IT ===== */
+
+.do_it {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.do_it P {
+	font-weight: 900;
+	margin-bottom: 20px;
+}
+
+.do_it_body {
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	border-radius: 4px;
+}
+
+.do_it_body div {
+	border-radius: 4px;
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.do_it_keys {
+	margin-bottom: 30px;
+}
+
+.do_it_keys a {
+	font-weight: 700;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0px 40px;
+	background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+	border-radius: 4px;
+	line-height: 52px;
+	letter-spacing: 0.5px;
+	color: #ffffff;
+}
+
+.do_it_keys a:hover {
+	color: #424551;
+}
+
+.do_it_keys a:active {
+	background: #ffffff;
+	outline: 1px solid #000;
+}
+
+.do_it_keys a:not(:last-child) {
+	margin-right: 36px;
+}
+
+.slide1:target {
+	background: url("../img/do_it_1.jpg") center no-repeat;
+}
+.slide2:target {
+	background: url("../img/do_it_2.jpg") center no-repeat;
+}
+.slide3:target {
+	background: url("../img/do_it_3.jpg") center no-repeat;
+}
+.slide4:target {
+	background: url("../img/do_it_4.jpg") center no-repeat;
+}
+
+/*===== LIGHTS ===== */
+
+.lights {
+	text-align: center;
+	padding: 0px 20px;
+	margin-bottom: 50px;
+}
+
+.lights .lights_body {
+	width: 600px;
+	height: 200px;
+	margin: 0 auto;
+	background: url("../img/lights.jpg") center top no-repeat;
+}
+
+.lights_body * {
+	display: inline-block;
+	background-color: #ffffff;
+	border: 1px solid #000;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.lights_body :nth-child(1) {
+	margin-top: 70px;
+	margin-right: 40px;
+}
+.lights_body :nth-child(2) {
+	margin-right: 50px;
+}
+.lights_body :nth-child(3) {
+	margin-right: 53px;
+}
+.lights_body :nth-child(4) {
+	margin-right: 60px;
+}
+.lights_body :nth-child(5) {
+	margin-right: 65px;
+}
+.lights p:first-of-type {
+	margin-bottom: 20px;
+}
+
+.lights .black{
+	font-weight: 900;
+}
+
+.lights span {
+	display: inline-block;
+	padding: 0px 20px;
+	background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+	border-radius: 4px;
+	line-height: 52px;
+	letter-spacing: 0.5px;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+
+/*===== lights logic =====*/
+
+.fch:hover ~ .lights_body > :first-child {
+	box-shadow: 0px 0px 70px 15px rgba(255, 255, 2, 1);
+	background: #ffff00;
+}
+.lch:hover ~ .lights_body > :last-child {
+	box-shadow: 0px 0px 70px 15px rgba(255, 255, 2, 1);
+	background: #ffff00;
+}
+.nth1:hover ~ .lights_body > :nth-child(1) {
+	box-shadow: 0px 0px 70px 15px rgba(255, 255, 2, 1);
+	background: #ffff00;
+}
+.nth2:hover ~ .lights_body > :nth-child(2) {
+	box-shadow: 0px 0px 70px 15px rgba(255, 255, 2, 1);
+	background: #ffff00;
+}
+.nth3:hover ~ .lights_body > :nth-child(3) {
+	box-shadow: 0px 0px 70px 15px rgba(255, 255, 2, 1);
+	background: #ffff00;
+}
+.nth4:hover ~ .lights_body > :nth-child(4) {
+	box-shadow: 0px 0px 70px 15px rgba(255, 255, 2, 1);
+	background: #ffff00;
+}
+.nth5:hover ~ .lights_body > :nth-child(5) {
+	box-shadow: 0px 0px 70px 15px rgba(255, 255, 2, 1);
+	background: #ffff00;
+}
+.nth6:hover ~ .lights_body > :nth-child(6) {
+	box-shadow: 0px 0px 70px 15px rgba(255, 255, 2, 1);
+	background: #ffff00;
+}
+.odd:hover ~ .lights_body > :nth-child(odd) {
+	box-shadow: 0px 0px 70px 15px rgba(255, 255, 2, 1);
+	background: #ffff00;
+}
+.even:hover ~ .lights_body > :nth-child(even) {
+	box-shadow: 0px 0px 70px 15px rgba(255, 255, 2, 1);
+	background: #ffff00;
+}
+.fot:hover ~ .lights_body > p:first-of-type {
+	box-shadow: 0px 0px 70px 15px rgba(255, 255, 2, 1);
+	background: #ffff00;
+}
+.lot:hover ~ .lights_body > div:last-of-type {
+	box-shadow: 0px 0px 70px 15px rgba(255, 255, 2, 1);
+	background: #ffff00;
+}
+.not:hover ~ .lights_body > :not(:nth-child(3)) {
+	box-shadow: 0px 0px 70px 15px rgba(255, 255, 2, 1);
+	background: #ffff00;
+}
+.not2:hover ~ .lights_body > :not(div:last-of-type) {
+	box-shadow: 0px 0px 70px 15px rgba(255, 255, 2, 1);
+	background: #ffff00;
+}
+
+/* ===== MAZE ===== */
+
+.hover_game .black {
+	text-align: center;
+	font-weight: 900;
+	margin-bottom: 20px;
+}
+
+.hover_game {
+	margin-bottom: 30px;
+}
+
+.bgrn {
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	background: url("../img/maze_bgrnd.jpg") 0 0 no-repeat;
+}
+
+.bgrn {
+	font-size: 0;
+}
+
+.bgrn * {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.start {
+	width: 50px;
+	height: 50px;
+	background-color: #00ffff;
+}
+
+.line_1 {
+	width: 300px;
+	height: 30px;
+	margin-top: 50px;
+	background-color: #00ffff;
+}
+
+.line_2 {
+	height: 100px;
+	width: 30px;
+	margin-left: 270px;
+	margin-top: 30px;
+	background-color: #00ffff;
+}
+
+.line_3 {
+	width: 250px;
+	height: 20px;
+	margin-top: 100px;
+	margin-left: -220px;
+	background-color: #00ffff;
+}
+
+.line_4 {
+	height: 80px;
+	width: 15px;
+	margin-top: 20px;
+	background-color: #00ffff;
+}
+
+.line_5 {
+	width: 245px;
+	height: 15px;
+	margin-top: 80px;
+	background-color: #00ffff;
+}
+
+.finish_line {
+	height: 70px;
+	width: 10px;
+	margin-top: 15px;
+	margin-left: 235px;
+	background-color: #00ffff;
+}
+
+.finish {
+	width: 400px;
+	font-weight: 900;
+	height: 35px;
+	margin-top: 70px;
+	margin-left: -285px;
+	font-size: 16px;
+	text-align: center;
+	padding: 5px;
+	background-color: #e71717;
+}
+
+.finish:active {
+	background-color: #00ffff;
+}
+
+/* MAZE LOGIC */
+.bgrn * :not(.start) {
+	opacity: 0;
+	visibility: hidden;
+}
+.start:hover .line_1 {
+	opacity: 1;
+	visibility: visible;
+}
+.line_1:hover .line_2 {
+	opacity: 1;
+	visibility: visible;
+}
+.line_2:hover .line_3 {
+	opacity: 1;
+	visibility: visible;
+}
+.line_3:hover .line_4 {
+	opacity: 1;
+	visibility: visible;
+}
+.line_4:hover .line_5 {
+	opacity: 1;
+	visibility: visible;
+}
+.line_5:hover .finish_line {
+	opacity: 1;
+	visibility: visible;
+}
+.finish_line:hover .finish {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* ===== Win ===== */
+
+.game_win {
+	max-width: 800px;
+	margin: 0 auto;
+	display: none;
+	padding-bottom: 20px;
+}
+
+.game_win:target {
+	display: block;
+}
+
+.game_win img {
+	width: 100%;
+}
+
+/* ===== VISITED ===== */
+.visited_links {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.visited_links p{
+	font-weight: 900;
+	margin-bottom: 20px;
+}
+
+.visited_links a {
+	margin: 0 auto;
+	display: block;
+	height: 200px;
+	width: 600px;
+	padding: 5px 20px;
+	background-color: #ffffff;
+}
+
+.visit1:visited {
+	background: #0057b7;
+	color: #0057b7;
+}
+
+.visit2:visited {
+	background: #ffd700;
+	color: #ffd700;
+}
