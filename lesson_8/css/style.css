@@ -619,35 +619,27 @@ body {
 
 /* MAZE LOGIC */
 .bgrn * :not(.start) {
-	opacity: 0;
 	visibility: hidden;
 }
 .start:hover .line_1 {
-	opacity: 1;
 	visibility: visible;
 }
 .line_1:hover .line_2 {
-	opacity: 1;
 	visibility: visible;
 }
 .line_2:hover .line_3 {
-	opacity: 1;
 	visibility: visible;
 }
 .line_3:hover .line_4 {
-	opacity: 1;
 	visibility: visible;
 }
 .line_4:hover .line_5 {
-	opacity: 1;
 	visibility: visible;
 }
 .line_5:hover .finish_line {
-	opacity: 1;
 	visibility: visible;
 }
 .finish_line:hover .finish {
-	opacity: 1;
 	visibility: visible;
 }
 
