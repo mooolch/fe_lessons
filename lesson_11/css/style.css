@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	background-color: #6495ed;
+	line-height: 1.5;
+}
+.wrapper {
+}
+
+/* ===========HEADER========== */
+.header__container {
+	text-align: center;
+}
+.header__text {
+	padding: 10px 0px;
+}
+
+.button {
+	padding: 0px 10px;
+	background-color: #ffff00;
+	border-radius: 30px;
+}
+
+.road {
+	position: relative;
+	width: 10000px;
+	height: 600px;
+	background: url("../img/road.jpg") 0 0 / 2500px 600px repeat-x;
+}
+
+/* ===========BROKEN CAR=========== */
+
+.car-broken {
+	width: 500px;
+	height: 600px;
+	position: relative;
+	display: none;
+	margin-left: 30px;
+	padding-top: 10px;
+}
+.car-broken__detail {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+}
+
+.car-broken__xzibit img {
+	width: 40%;
+	border-radius: 20px;
+	position: relative;
+	left: 100px;
+}
+
+.car-broken__text {
+	padding: 10px 0px;
+}
+
+.car-broken:target {
+	display: block;
+}
+.car-broken__detail {
+	position: absolute;
+}
+
+.car-broken__detail-1 {
+	top: 250px;
+}
+.car-broken__detail-2 {
+	top: 350px;
+}
+.car-broken__detail-3 {
+	top: 250px;
+	left: 10px;
+}
+.car-broken__detail-4 {
+	top: 480px;
+	left: 30px;
+}
+.car-broken__detail-5 {
+	top: 400px;
+	left: 100px;
+}
+.car-broken__detail-6 {
+	top: 350px;
+	left: 330px;
+}
+.car-broken__detail-7 {
+	top: 480px;
+	left: 270px;
+}
+.car-broken__detail-8 {
+	top: 250px;
+	left: 330px;
+}
+.car-broken__detail-9 {
+	top: 320px;
+	left: 230px;
+}
+
+/* ==========CAR=========== */
+.car {
+	width: 800px;
+	height: 400px;
+	padding: 5px;
+	position: fixed;
+	top: 60px;
+	left: 0;
+	z-index: 100;
+}
+
+.start-img {
+	margin-left: 30px;
+	position: absolute;
+	top: 430px;
+}
+
+.start-img img {
+	border-radius: 30px;
+}
+.start-text {
+	position: absolute;
+	top: 500px;
+	left: 260px;
+	color: #ffff00;
+}
+
+.road__body {
+	display: none;
+	position: relative;
+}
+
+.road__body:target {
+	display: block;
+}
+
+.car__detail {
+	position: absolute;
+}
+
+.car__detail--1 {
+	bottom: 54px;
+	right: 0px;
+}
+.car__detail--2 {
+	bottom: 0px;
+	right: 75px;
+}
+.car__detail--3 {
+	bottom: 30px;
+	right: 134px;
+}
+.car__detail--4 {
+	bottom: 157px;
+	right: 63px;
+}
+.car__detail--5 {
+	top: 98px;
+	right: 180px;
+}
+.car__detail--6 {
+	top: 99px;
+	left: 227px;
+}
+.car__detail--7 {
+	top: 105px;
+	left: 179px;
+}
+.car__detail--8 {
+	bottom: 33px;
+	left: 151px;
+}
+.car__detail--9 {
+	bottom: 70px;
+	left: 84px;
+}
+
+.car__detail--10{
+	top: 100px;
+	left: 320px;
+}
+.car__detail--10 img{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+}
+/* ==========Memes=========== */
+
+.memes__img {
+	position: absolute;
+}
+.memes__img--1 {
+	left: 3000px;
+}
+
+.memes__img--2 {
+	left: 4500px;
+	top: 300px;
+}
+.memes__img--2 img{
+	width: 300px;
+	height: 300px;
+}
+
+.memes__img--3 {
+	left: 6000px;
+	top: -80px;
+}
+.memes__img--3 img{
+	width: 400px;
+	height: 200px;
+}
+
+.memes__img--4 {
+	left: 7500px;
+	top: 350px;
+}
+.memes__img--4 img{
+	width: 250px;
+	height: 250px;
+}
+
+.memes__img--5 {
+	left: 9530px;
+	top: 80px;
+}
+.memes__img--5 img{
+	width: 450px;
+	height: 350px;
+	border-radius: 30px;
+}
+
+.memes__link{
+	position: absolute;
+	right: 10px;
+	top: 550px;
+}
