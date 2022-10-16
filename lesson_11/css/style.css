@@ -108,7 +108,7 @@ body {
 	position: fixed;
 	top: 60px;
 	left: 0;
-	z-index: 100;
+	z-index: 1;
 }
 
 .start-img {
@@ -198,6 +198,7 @@ border-radius: 50%;
 .memes__img--2 {
 	left: 4500px;
 	top: 300px;
+	z-index: 2;
 }
 .memes__img--2 img{
 	width: 300px;
@@ -207,6 +208,7 @@ border-radius: 50%;
 .memes__img--3 {
 	left: 6000px;
 	top: -80px;
+	z-index: 2;
 }
 .memes__img--3 img{
 	width: 400px;
@@ -216,6 +218,7 @@ border-radius: 50%;
 .memes__img--4 {
 	left: 7500px;
 	top: 350px;
+	z-index: 2;
 }
 .memes__img--4 img{
 	width: 250px;
