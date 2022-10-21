@@ -229,7 +229,6 @@ body {
 }
 .cube__side {
 	position: absolute;
-	border-radius: 3px;
 	top: 0;
 	left: 0;
 	width: 200px;
