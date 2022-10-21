@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.main {
+	padding-top: 130px;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	background-image: linear-gradient(45deg, rgba(27, 24, 31, 1) 21.2%, rgba(50, 4, 89, 1) 84.8%);
+}
+/* =================HEADER STYLES==================== */
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0%;
+	width: 100%;
+	z-index: 1;
+	padding: 20px;
+	opacity: 0.8;
+	text-align: center;
+	box-shadow: 
+	inset 0 0 50px #fff,
+	inset 20px 0 80px #f0f,
+	inset -20px 0 80px #0ff,
+	inset 20px 0 300px #f0f,
+	inset -20px 0 300px #0ff, 
+	0 0 50px #fff,
+	-10px 0 80px #f0f,
+	10px 0 80px #0ff; 
+}
+.menu__list {
+}
+.menu__link {
+}
+/* =================MAIN STYLES==================== */
+.main__container {
+	max-width: 1170px;
+	padding: 0px 70px;
+	margin: 0 auto;
+}
+
+/* =================GENERAL STYLES==================== */
+
+.box {
+	width: 700px;
+	margin: 0 auto;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+}
+.item {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	line-height: 200px;
+	text-align: center;
+	border-radius: 30px;
+}
+
+/* =================SKEW STYLES==================== */
+.skew__body {
+	margin-bottom: 50px;
+}
+
+.skew__item {
+	background-color: #ff7f50;
+	animation: skew 1s infinite linear alternate;
+}
+
+.skew__item:not(:last-child) {
+	margin-right: 44px;
+}
+
+@keyframes skew {
+	0% {
+		transform: skew(30deg);
+	}
+
+	100% {
+		transform: skew(-30deg);
+	}
+}
+
+/* =================ROTATE STYLES==================== */
+
+.rotate__body {
+	margin-bottom: 50px;
+}
+
+.rotate__item {
+	background: #ffc0cb;
+}
+
+.rotate__item:not(:last-child) {
+	margin-right: 44px;
+}
+
+.rotate__item--1 {
+	animation: rotate1 3s infinite linear;
+}
+.rotate__item--2 {
+	animation: rotate2 3s infinite linear;
+}
+.rotate__item--3 {
+	animation: rotate3 3s infinite linear;
+}
+
+@keyframes rotate1 {
+	0% {
+		transform: rotatex(0deg);
+	}
+
+	100% {
+		transform: rotatex(360deg);
+	}
+}
+@keyframes rotate2 {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotate3 {
+	0% {
+		transform: rotatey(0deg);
+	}
+
+	100% {
+		transform: rotatey(360deg);
+	}
+}
+
+/* =================TRANSLATE STYLES==================== */
+.translate__body {
+	position: relative;
+	margin-bottom: 50px;
+	min-height: 200px;
+}
+.translate__item {
+	position: absolute;
+	background: #0000ff;
+}
+
+.translate__item--1 {
+	top: 0;
+	left: 0;
+	animation: trnslt1 1s infinite linear alternate;
+}
+.translate__item--2 {
+	top: 0;
+	right: 0;
+	animation: trnslt2 1s infinite linear alternate;
+}
+
+@keyframes trnslt1 {
+	0% {
+		transform: translatey(-30px);
+	}
+
+	20% {
+		transform: translate(0px);
+	}
+
+	100% {
+		transform: translatex(150px);
+	}
+}
+@keyframes trnslt2 {
+	0% {
+		transform: translatey(30px);
+	}
+
+	20% {
+		transform: translate(0px);
+	}
+
+	100% {
+		transform: translatex(-150px);
+	}
+}
+
+/* =================SCALE STYLES==================== */
+
+.scale__body {
+	margin-bottom: 150px;
+}
+.scale__item {
+	width: 100%;
+	background: #ffff00;
+	transform: scale(0.3, 0.3);
+	animation: scale 1.5s infinite linear alternate;
+}
+
+@keyframes scale {
+	0% {
+		transform: scale(0.3, 0.3);
+	}
+
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+/* =================CUBE STYLES==================== */
+
+.cube {
+	perspective: 400px;
+	position: relative;
+}
+.cube__body {
+	position: relative;
+	transform-style: preserve-3d;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 250px;
+	animation: cube 5s infinite linear;
+	z-index: 2;
+}
+.cube__side {
+	position: absolute;
+	border-radius: 3px;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	box-shadow: 
+    inset 0 0 50px #fff, 
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff, 
+    inset 20px 0 300px #f0f, 
+    inset -20px 0 300px #0ff,
+    0 0 10px #fff, 
+    0px 0 10px #f0f, 
+    0px 0 10px #0ff;
+}
+
+.cube__side--1 {
+	transform: translatez(100px);
+}
+.cube__side--2 {
+	transform: translatez(-100px);
+}
+.cube__side--3 {
+	transform: rotatex(90deg) translatez(100px);
+}
+.cube__side--4 {
+	transform: rotatex(-90deg) translatez(100px);
+}
+.cube__side--5 {
+	transform: rotatey(90deg) translatez(100px);
+}
+.cube__side--6 {
+	transform: rotatey(-90deg) translatez(100px);
+}
+.cube__shadow {
+	position: absolute;
+	transform: rotatex(-90deg) translatez(200px);
+	border-radius: 50%;
+	top: 150%;
+	left: 50%;
+	transform: translatex(-50%);
+	width: 250px;
+	height: 100px;
+	box-shadow: 
+    inset 0 0 50px #fff, 
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff, 
+    inset 20px 0 300px #f0f, 
+    inset -20px 0 300px #0ff,
+    0 0 10px #fff, 
+    0px 0 10px #f0f, 
+    0px 0 10px #0ff;
+}
+
+@keyframes cube {
+	0% {
+		transform: rotatex(0deg) rotatey(0deg);
+	}
+
+	100% {
+		transform: rotatex(360deg) rotatey(360deg);
+	}
+}
