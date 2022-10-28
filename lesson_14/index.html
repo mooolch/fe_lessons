@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CCS Flexbox</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo"><a href="#">CCS Flexbox</a></div>
+            <div class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__link"><a href="#fw">flex-wrap</a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__link"><a href="#1">wrap</a></li>
+                            <li class="sub-menu__link"><a href="#2">nowwrap</a></li>
+                            <li class="sub-menu__link"><a href="#3">wrap-reverse</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__link"><a href="#jc">justify-content</a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__link"><a href="#4">flex-start</a></li>
+                            <li class="sub-menu__link"><a href="#5">flex-end</a></li>
+                            <li class="sub-menu__link"><a href="#6">center</a></li>
+                            <li class="sub-menu__link"><a href="#7">space-between</a></li>
+                            <li class="sub-menu__link"><a href="#8">space-around</a></li>
+                            <li class="sub-menu__link"><a href="#9">space-evenly</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__link"><a href="#ai">align-items</a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__link"><a href="#10">stretch</a></li>
+                            <li class="sub-menu__link"><a href="#11">flex-start</a></li>
+                            <li class="sub-menu__link"><a href="#12">flex-end</a></li>
+                            <li class="sub-menu__link"><a href="#13">center</a></li>
+                            <li class="sub-menu__link"><a href="#14">baseline</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__link"><a href="#fd">flex-direction</a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__link"><a href="#15">row</a></li>
+                            <li class="sub-menu__link"><a href="#16">row-reverse</a></li>
+                            <li class="sub-menu__link"><a href="#17">column</a></li>
+                            <li class="sub-menu__link"><a href="#18">column-reverse</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__link"><a href="#19">align-self</a>
+                    <li class="menu__link"><a href="#20">flex-grow</a></li>
+                    <li class="menu__link"><a href="#21">flex-shrink</a></li>
+                    <li class="menu__link"><a href="#pr">practice</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="main__container">
+                <div id="fw" class="nowwrap">
+                    <h2 id="1" class="title">flex-wrap</h2>
+                    <div class="nowrap__block block">
+                        <div class="nowrap__elem elem">nowrap</div>
+                        <div class="nowrap__elem elem">nowrap</div>
+                        <div class="nowrap__elem elem">nowrap</div>
+                        <div class="nowrap__elem elem">nowrap</div>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <h2 id="2" class="title">flex-wrap</h2>
+                    <div class="wrap__block block">
+                        <div class="wrap__elem elem">wrap</div>
+                        <div class="wrap__elem elem">wrap</div>
+                        <div class="wrap__elem elem">wrap</div>
+                        <div class="wrap__elem elem">wrap</div>
+                    </div>
+                </div>
+
+                <div class="wrap-reverse">
+                    <h2 id="3" class="title">flex-wrap</h2>
+                    <div class="wrap-reverse__block block">
+                        <div class="wrap-reverse__elem elem">wrap-reverse</div>
+                        <div class="wrap-reverse__elem elem">wrap-reverse</div>
+                        <div class="wrap-reverse__elem elem">wrap-reverse</div>
+                        <div class="wrap-reverse__elem elem">wrap-reverse</div>
+                    </div>
+                </div>
+
+                <div id="jc" class="flex-start">
+                    <h2 id="4" class="title">justify-content</h2>
+                    <div class="flex-start__block block">
+                        <div class="flex-start__elem elem">flex-start</div>
+                        <div class="flex-start__elem elem">flex-start</div>
+                        <div class="flex-start__elem elem">flex-start</div>
+                        <div class="flex-start__elem elem">flex-start</div>
+                    </div>
+                </div>
+
+                <div class="flex-end">
+                    <h2 id="5" class="title">justify-content</h2>
+                    <div class="flex-end__block block">
+                        <div class="flex-end__elem elem">flex-end</div>
+                        <div class="flex-end__elem elem">flex-end</div>
+                        <div class="flex-end__elem elem">flex-end</div>
+                        <div class="flex-end__elem elem">flex-end</div>
+                    </div>
+                </div>
+
+                <div class="center">
+                    <h2 id="6" class="title">justify-content</h2>
+                    <div class="center__block block">
+                        <div class="center__elem elem">center</div>
+                        <div class="center__elem elem">center</div>
+                        <div class="center__elem elem">center</div>
+                        <div class="center__elem elem">center</div>
+                    </div>
+                </div>
+
+                <div class="space-between">
+                    <h2 id="7" class="title">justify-content</h2>
+                    <div class="space-between__block block">
+                        <div class="space-between__elem elem">space-between</div>
+                        <div class="space-between__elem elem">space-between</div>
+                        <div class="space-between__elem elem">space-between</div>
+                        <div class="space-between__elem elem">space-between</div>
+                    </div>
+                </div>
+
+                <div class="space-around">
+                    <h2 id="8" class="title">justify-content</h2>
+                    <div class="space-around__block block">
+                        <div class="space-around__elem elem">space-around</div>
+                        <div class="space-around__elem elem">space-around</div>
+                        <div class="space-around__elem elem">space-around</div>
+                        <div class="space-around__elem elem">space-around</div>
+                    </div>
+                </div>
+
+                <div class="space-evently">
+                    <h2 id="9" class="title">justify-content</h2>
+                    <div class="space-evenly__block block">
+                        <div class="space-evenly__elem elem">space-evenly</div>
+                        <div class="space-evenly__elem elem">space-evenly</div>
+                        <div class="space-evenly__elem elem">space-evenly</div>
+                        <div class="space-evenly__elem elem">space-evenly</div>
+                    </div>
+                </div>
+
+                <div id="ai" class="stretch">
+                    <h2 id="10" class="title">align-items</h2>
+                    <div class="stretch__block block">
+                        <div class="stretch__elem elem">stretch</div>
+                        <div class="stretch__elem elem">stretch</div>
+                        <div class="stretch__elem elem">stretch</div>
+                        <div class="stretch__elem elem">stretch</div>
+                    </div>
+                </div>
+
+                <div class="flex-start-a">
+                    <h2 id="11" class="title">align-items</h2>
+                    <div class="flex-start-a__block block">
+                        <div class="flex-start-a__elem elem">flex-start</div>
+                        <div class="flex-start-a__elem elem">flex-start</div>
+                        <div class="flex-start-a__elem elem">flex-start</div>
+                        <div class="flex-start-a__elem elem">flex-start</div>
+                    </div>
+                </div>
+
+                <div class="flex-end-a">
+                    <h2 id="12" class="title">align-items</h2>
+                    <div class="flex-end-a__block block">
+                        <div class="flex-end-a__elem elem">flex-end</div>
+                        <div class="flex-end-a__elem elem">flex-end</div>
+                        <div class="flex-end-a__elem elem">flex-end</div>
+                        <div class="flex-end-a__elem elem">flex-end</div>
+                    </div>
+                </div>
+
+                <div class="center-a">
+                    <h2 id="13" class="title">align-items</h2>
+                    <div class="center-a__block block">
+                        <div class="center-a__elem elem">center</div>
+                        <div class="center-a__elem elem">center</div>
+                        <div class="center-a__elem elem">center</div>
+                        <div class="center-a__elem elem">center</div>
+                    </div>
+                </div>
+
+                <div class="baseline">
+                    <h2 id="14" class="title">align-items</h2>
+                    <div class="baseline__block block">
+                        <div class="baseline__elem baseline__elem--1 elem">baseline</div>
+                        <div class="baseline__elem elem">baseline</div>
+                        <div class="baseline__elem elem">baseline</div>
+                        <div class="baseline__elem baseline__elem--1 elem">baseline</div>
+                    </div>
+                </div>
+
+                <div id="fd" class="row">
+                    <h2 id="15" class="title">flex-direction</h2>
+                    <div class="row__block block">
+                        <div class="row__elem elem">row <span>1</span></div>
+                        <span>column-gap</span>
+                        <div class="row__elem elem">row <span>2</span></div>
+                        <span>column-gap</span>
+                        <div class="row__elem elem">row <span>3</span></div>
+                        <span>column-gap</span>
+                        <div class="row__elem elem">row <span>4</span></div>
+                    </div>
+                </div>
+
+                <div class="row-reverse">
+                    <h2 id="16" class="title">flex-direction</h2>
+                    <div class="row-reverse__block block">
+                        <div class="row-reverse__elem elem">row-reverse <span>1</span></div>
+                        <div class="row-reverse__elem elem">row-reverse <span>2</span></div>
+                        <div class="row-reverse__elem elem">row-reverse <span>3</span></div>
+                        <div class="row-reverse__elem elem">row-reverse <span>4</span></div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <h2 id="17" class="title">flex-direction</h2>
+                    <div class="column__block block">
+                        <div class="column__elem elem">column <span>1</span></div>
+                        <span>------row-gap------</span>
+                        <div class="column__elem elem">column <span>2</span></div>
+                        <span>------row-gap------</span>
+                        <div class="column__elem elem">column <span>3</span></div>
+                        <span>------row-gap------</span>
+                        <div class="column__elem elem">column <span>4</span></div>
+                    </div>
+                </div>
+
+                <div class="column-reverse">
+                    <h2 id="18" class="title">flex-direction</h2>
+                    <div class="column-reverse__block block">
+                        <div class="column-reverse__elem elem">column-reverse <span>1</span></div>
+                        <div class="column-reverse__elem elem">column-reverse <span>2</span></div>
+                        <div class="column-reverse__elem elem">column-reverse <span>3</span></div>
+                        <div class="column-reverse__elem elem">column-reverse <span>4</span></div>
+                    </div>
+                </div>
+
+                <div class="align-self">
+                    <h2 id="19" class="title">align-self</h2>
+                    <div class="align-self__block block">
+                        <div class="align-self__elem1 elem">stretch</div>
+                        <div class="align-self__elem2 elem">flex-start</div>
+                        <div class="align-self__elem3 elem">center</div>
+                        <div class="align-self__elem4 elem">flex-end</div>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <h2 id="20" class="title">flex-grow</h2>
+                    <div class="flex-grow__block block">
+                        <div class="flex__grow-elem elem">flex-grow:0</div>
+                        <div class="flex__grow-elem elem">flex-grow:0</div>
+                        <div class="flex__grow-elem1 elem">flex-grow:1</div>
+                        <div class="flex__grow-elem elem">flex-grow:0</div>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <h2 id="21" class="title">flex-shrink</h2>
+                    <div class="flex-shrink__block block">
+                        <div class="flex__shrink-elem elem">flex-shrink:1</div>
+                        <div class="flex__shrink-elem elem">flex-shrink:1</div>
+                        <div class="flex__shrink-elem1 elem">flex-shrink:0 <br> flex-basis: 300px;</div>
+                        <div class="flex__shrink-elem elem">flex-shrink:1</div>
+                    </div>
+                </div>
+
+                <div class="practice">
+                    <div class="practice__block-1">
+                        <h2 id="pr" class="practice__title">CSS Flexbox Layout Module</h2>
+                        <p class="practice__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
+                            molestiae pariatur necessitatibus nemo quia eligendi autem eveniet iste! Doloremque velit
+                            adipisci nihil nesciunt atque omnis, voluptas, odit vero mollitia expedita eum saepe? Eos
+                            dignissimos eveniet beatae placeat, cupiditate nesciunt ratione dolor itaque ad modi officia
+                            dolorum laborum harum blanditiis nostrum! Quam, itaque inventore alias voluptatem eveniet
+                            dolor. Vel totam, doloremque exercitationem minus ipsum laboriosam saepe tempora alias modi
+                            sed, enim architecto expedita! Itaque illum, impedit id provident ipsa sapiente unde nisi
+                            rerum libero, quidem quis, laboriosam error necessitatibus exercitationem amet modi
+                            molestias! Repellat eligendi facere provident quod saepe sunt neque dolorum porro? Maxime,
+                            deleniti voluptatum. Numquam distinctio earum deleniti eius cumque, quos mollitia optio
+                            maiores aperiam iusto commodi ab unde repellendus est libero. Iure quos exercitationem quae
+                            ipsum vel. Molestias unde, voluptatem non beatae vitae suscipit quia libero magni expedita
+                            optio possimus eveniet. Beatae maxime sunt explicabo magni id? Consectetur, a quae magni
+                            delectus sint, ad eligendi facere assumenda iure atque, nulla veniam nisi nostrum! Nulla
+                            amet quo maxime odit modi perferendis qui ipsam exercitationem cupiditate debitis adipisci
+                            necessitatibus incidunt, quod consectetur tempora cumque tempore neque animi esse minima.
+                            Blanditiis nostrum dolorem, a ratione enim sed rerum! Eligendi, ad accusamus!
+                        </p>
+                        <a class="button" target="_blank" href="https://www.w3schools.com/css/css3_flexbox.asp">link</a>
+                    </div>
+
+                    <div class="practice__block-2">
+                        <div class="cards-practice">
+                            <div class="card">
+                                <div class="card__body">
+                                    <div class="card__image">
+                                        <picture>
+                                            <source srcset="img/tacos.webp" type="image/webp">
+                                            <img src="img/tacos.jpg" alt="Tacos on plate">
+                                        </picture>
+                                    </div>
+                                    <div class="card__text">
+                                        The taco as we know it today is a blend of ancient Mexican recipes
+                                        and International influences. However, before it was
+                                        known in America, natives in Mexico were eating a version that looked quite
+                                        different.
+                                        Where did America’s favorite comfort food originate? Here’s the history of one
+                                        of
+                                        the
+                                        best foods on the planet.
+                                        Tacos are thought to come from Mexico, long before the Spanish arrived. Ancient
+                                        Mexicans
+                                        used freshly made, soft, flat
+                                        corn tortillas and gave them with fillings like fish and cooked organs. It was a
+                                        staple
+                                        meal that provided vital
+                                        nutrients and energy to those who consumed it.
+                                        These tacos didn’t contain the cheese, lettuce, sour cream, and tomato that we
+                                        associate
+                                        with the meal today. In fact,
+                                        the taco as we know it is less than 100 years old.
+                                    </div>
+                                    <a class="button" target="_blank"
+                                        href="https://www.twistedtaco.com/the-history-of-the-taco">More tacos!</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__body">
+                                    <div class="card__image">
+                                        <picture>
+                                            <source srcset="img/tacos.webp" type="image/webp">
+                                            <img src="img/tacos.jpg" alt="Tacos on plate">
+                                        </picture>
+                                    </div>
+                                    <div class="card__text">
+                                        The taco as we know it today is a blend of ancient Mexican recipes
+                                        and International influences. However, before it was
+                                        known in America, natives in Mexico were eating a version that looked quite
+                                        different.
+                                    </div>
+                                    <a class="button" target="_blank"
+                                        href="https://www.twistedtaco.com/the-history-of-the-taco">More tacos!</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__body">
+                                    <div class="card__image">
+                                        <picture>
+                                            <source srcset="img/tacos.webp" type="image/webp">
+                                            <img src="img/tacos.jpg" alt="Tacos on plate">
+                                        </picture>
+                                    </div>
+                                    <div class="card__text">
+                                        The taco as we know it today is a blend of ancient Mexican recipes
+                                        and International influences. However, before it was
+                                        known in America, natives in Mexico were eating a version that looked quite
+                                        different.
+                                        Where did America’s favorite comfort food originate? Here’s the history of one
+                                        of
+                                        the
+                                        best foods on the planet.
+                                        Tacos are thought to come from Mexico, long before the Spanish arrived. Ancient
+                                        Mexicans
+                                        used freshly made, soft, flat
+                                        corn tortillas and gave them with fillings like fish and cooked organs. It was a
+                                        staple
+                                        meal that provided vital
+                                        nutrients and energy to those who consumed it.
+                                        These tacos didn’t contain the cheese, lettuce, sour cream, and tomato that we
+                                        associate
+                                        with the meal today. In fact,
+                                        the taco as we know it is less than 100 years old.
+                                    </div>
+                                    <a class="button" target="_blank"
+                                        href="https://www.twistedtaco.com/the-history-of-the-taco">More tacos!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="practice__block-3">
+
+                        <div class="big-card">
+                            <div class="big-card__image">
+                                <picture>
+                                    <source srcset="img/tacos.webp" type="image/webp">
+                                    <img src="img/tacos.jpg" alt="Tacos on plate">
+                                </picture>
+                            </div>
+                            <div class="big-card__text">
+                                <div>
+                                    The taco as we know it today is a blend of ancient Mexican recipes
+                                    and International influences. However, before it was
+                                    known in America, natives in Mexico were eating a version that looked quite
+                                    different.
+                                    Where did America’s favorite comfort food originate? Here’s the history of one
+                                    of
+                                    the
+                                    best foods on the planet.
+                                    Tacos are thought to come from Mexico, long before the Spanish arrived. Ancient
+                                    Mexicans
+                                    used freshly made, soft, flat
+                                    corn tortillas and gave them with fillings like fish and cooked organs. It was a
+                                    staple
+                                    meal that provided vital
+                                    nutrients and energy to those who consumed it.
+                                    These tacos didn’t contain the cheese, lettuce, sour cream, and tomato that we
+                                    associate
+                                    with the meal today. In fact,
+                                    the taco as we know it is less than 100 years old.
+                                </div>
+                                <a class="button" target="_blank"
+                                    href="https://www.twistedtaco.com/the-history-of-the-taco">More
+                                    tacos!</a>
+                            </div>
+                        </div>
+
+                        <div class="big-card">
+                            <div class="big-card__image">
+                                <picture>
+                                    <source srcset="img/tacos.webp" type="image/webp">
+                                    <img src="img/tacos.jpg" alt="Tacos on plate">
+                                </picture>
+                            </div>
+                            <div class="big-card__text">
+                                <div>
+                                    The taco as we know it today is a blend of ancient Mexican recipes
+                                    and International influences. However, before it was
+                                    known in America, natives in Mexico were eating a version that looked quite
+                                    different.
+                                    Where did America’s favorite comfort food originate? Here’s the history of one
+                                    of
+                                    the
+                                    best foods on the planet.
+                                </div>
+                                <a class="button" target="_blank"
+                                    href="https://www.twistedtaco.com/the-history-of-the-taco">More
+                                    tacos!</a>
+                            </div>
+                        </div>
+
+                        <div class="big-card">
+                            <div class="big-card__image">
+                                <picture>
+                                    <source srcset="img/tacos.webp" type="image/webp">
+                                    <img src="img/tacos.jpg" alt="Tacos on plate">
+                                </picture>
+                            </div>
+                            <div class="big-card__text">
+                                <div>
+                                    The taco as we know it today is a blend of ancient Mexican recipes
+                                    and International influences. However, before it was
+                                    known in America, natives in Mexico were eating a version that looked quite
+                                    different.
+                                    Where did America’s favorite comfort food originate? Here’s the history of one
+                                    of
+                                    the
+                                    best foods on the planet.
+                                    Tacos are thought to come from Mexico, long before the Spanish arrived. Ancient
+                                    Mexicans
+                                    used freshly made, soft, flat
+                                    corn tortillas and gave them with fillings like fish and cooked organs. It was a
+                                    staple
+                                    meal that provided vital
+                                    nutrients and energy to those who consumed it.
+                                    These tacos didn’t contain the cheese, lettuce, sour cream, and tomato that we
+                                    associate
+                                    with the meal today. In fact,
+                                    the taco as we know it is less than 100 years old.
+                                </div>
+                                <a class="button" target="_blank"
+                                    href="https://www.twistedtaco.com/the-history-of-the-taco">More
+                                    tacos!</a>
+                            </div>
+                        </div>
+
+                        <div class="big-card">
+                            <div class="big-card__image">
+                                <picture>
+                                    <source srcset="img/tacos.webp" type="image/webp">
+                                    <img src="img/tacos.jpg" alt="Tacos on plate">
+                                </picture>
+                            </div>
+                            <div class="big-card__text">
+                                <div>
+                                    The taco as we know it today is a blend of ancient Mexican recipes
+                                    and International influences. However, before it was
+                                    known in America, natives in Mexico were eating a version that looked quite
+                                    different.
+                                    Where did America’s favorite comfort food originate? Here’s the history of one
+                                    of
+                                    the
+                                    best foods on the planet.
+                                </div>
+                                <a class="button" target="_blank"
+                                    href="https://www.twistedtaco.com/the-history-of-the-taco">More tacos!</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">FOOTER</footer>
+
+</body>
+
+</html>
