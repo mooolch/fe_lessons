@@ -496,10 +496,7 @@ span {
 	max-width: 100%;
 	opacity: 0.7;
 	transition: 0.3s ease 0s;
-
-	/* Предохранитель чтобы при замене изображения в одной из карточек оно не расширяло всю карточку вниз */
-	/* max-height: 210px;
-	min-height: 210px; */
+	max-height: 210px;
 }
 
 .card__image:hover.card__image img {
@@ -528,11 +525,15 @@ span {
 .big-card__image {
 	flex: 0 1 50%;
 	padding: 0 10px;
+	align-self: center;
+	display: flex;
+	justify-content: center;
 }
 .big-card__image img {
 	max-width: 100%;
 	opacity: 0.7;
 	transition: 0.3s ease 0s;
+	max-height: 315px;
 }
 .big-card__image:hover.big-card__image img {
 	opacity: 1;
