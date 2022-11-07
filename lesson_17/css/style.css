@@ -851,6 +851,16 @@ path {
 		padding-top: 0px;
 	}
 }
+@media (max-width: 679.98px) {
+	.benefits {
+		padding-bottom: 30px;
+	}
+}
+@media (max-width: 530.98px) {
+	.benefits {
+		padding-bottom: 15px;
+	}
+}
 .benefits__container {
 }
 .benefits__label {
