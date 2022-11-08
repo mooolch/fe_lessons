@@ -373,6 +373,11 @@ path {
 .page-main__showreel {
 	margin: 15px 0px 24px 0px;
 }
+@media (max-width: 1279.98px) {
+	.page-main__showreel {
+		margin: 15px 0px 24px 10px;
+	}
+}
 .showreel {
 	font-weight: 700;
 	font-size: 14px;
