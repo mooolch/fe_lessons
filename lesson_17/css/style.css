@@ -941,6 +941,7 @@ path {
 	.benefits__content {
 		flex-wrap: wrap;
 		justify-content: center;
+		text-align: center;
 	}
 }
 .benefits-info {
