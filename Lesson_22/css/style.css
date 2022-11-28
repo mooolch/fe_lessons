@@ -1,0 +1,53 @@
+body {
+	/* Значення за замовченням */
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #424551;
+	background-color: #333;
+	color: #fff;
+	/* font-size: 16px; */
+	font-size: 0.875rem; /* 14px, якщо за замовченням 16px */
+}
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+/* ============================ */
+.main__container {
+	max-width: 1200px;
+	padding: 20px 15px;
+	margin: 0 auto;
+}
+.homework__title {
+	font-size: 48px;
+	color: orangered;
+	text-align: center;
+	margin-bottom: 48px;
+}
+.title {
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 24px;
+}
+.answer-text {
+	font-size: 18px;
+	color: greenyellow;
+	margin-bottom: 24px;
+}
+.answer {
+	color: red;
+}
+.answer:not(:last-child) {
+	margin-bottom: 20px;
+}
+.homework {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
