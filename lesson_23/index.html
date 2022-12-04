@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>JS</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="page">
+            <div class="main__container">
+                <section class="homework">
+                    <h1 class="homework__title">JAVASCRIPT</h1>
+
+                    <article class="homework__video">
+                        <h2 class="title">Операторы JAVASCRIPT</h2>
+                        <div class="answer-text">
+                            Не верны варианты овтетов:
+                        </div>
+                        <div class="answer">
+                            console.log('35' + -'22');
+                            <br>
+                            Так как оператор ' + ' не переведет тип данных и просто добавит одну строку к другой.
+                        </div>
+                        <div class="answer">
+                            console.log('558' > 22++);
+                            <br>
+                            Так как инкременты работают только с переменными.
+                        </div>
+                        <div class="answer">
+                            let usersCounter = 0;<br>
+                            let newUsers = usersCounter++;<br>
+                            console.log(newUsers);
+                            <br>
+                            Так как постфиксный инкремент "выдает" старое зачение переменной.
+                        </div>
+                        <div class="answer">
+                            console.log((!false && 11) || (18 && !''));
+                            <br>
+                            Оператор && получает в первых скобках два значения "true" возвращается 11(так как
+                            оно последнее), во вторых скобках так же оба значения "true" и нам возвращается "true",
+                            далее оператор || сравнивает оба значения 11 и "" выбивает первое истинное - тоесть 11.
+                        </div>
+                        <div class="answer">
+                            let name = 0;<br>
+                            console.log(name ?? 'Без имени');
+                            <br>
+                            Вернет нам переменную name, тоесть 0, так как ёё значение отличное от null или undefined.
+                        </div>
+                    </article>
+
+                    <article class="homework__video">
+                        <h2 class="title">IF ELSE в JAVASCRIPT</h2>
+                        <div class="answer-text">
+                            Ответы:
+                        </div>
+                        <div class="answer">
+                            if (1 === '1') {<br>
+                            console.log('true');<br>
+                            } else {<br>
+                            console.log('false');<br>
+                            }
+                            <br>
+                            Вернет нам 'false' потому что строгое сравнение '===' не переводит тип данных
+                        </div>
+                        <div class="answer">
+                            if (5 == '5') {<br>
+                            console.log('true');<br>
+                            } else {<br>
+                            console.log('false');<br>
+                            }
+                            <br>
+                            Вернет нам true, так как нестрогое сравнение '==' конвертирует оба значения в один тип
+                            данных - числовой
+                        </div>
+                        <div class="answer">
+                            let message = (92 &gt; '11' && 54 &lt; 100) ? 'true' : 'false' ; console.log(message); <br>
+                            Вернет нам 'true', потому что для сравнения операторы '&lt;' '&gt;' приводят значения к
+                            одному
+                            типу данных и общее выражение в скобках становистя правдиво. </div>
+                        <div class="answer">
+                            if (0) {<br>
+                            console.log('true');<br>
+                            } else if (' ') {<br>
+                            console.log('false');<br>
+                            }
+                            <br>
+                            Вернет 'false', потому что код помещенный в if выполнится только при получении значения
+                            'true' в условиях, а нашем случае там находится 0 = false, второе условие выполняется, так
+                            как строка с пробелом имеет значение 'true'
+                        </div>
+                    </article>
+
+                    <article class="homework__video">
+                        <h2 class="title">Циклы FOR и WHILE</h2>
+                        <div class="answer-text">
+                            Задание 1 внутри файла script.js
+                        </div>
+                        <div class="answer">
+                            let num = 8; <br>
+                            while (num) { <br>
+                            console.log(num); <br>
+                            num--; <br>
+                            } <br>
+                            В консоль выведутся цифры 8-1, посколку после получения цифры 0 в значение num цикл не будет
+                            выполняться так как num = 0 = false в условии цикла
+                        </div>
+                        <div class="answer-text">Задание 3 внутри файла script.js</div>
+                        <div class="answer-text">Задание 4 внутри файла script.js</div>
+                    </article>
+
+                    <article class="homework__video">
+                        <h2 class="title">Числа в JAVASCRIPT</h2>
+                        <div class="answer-text">
+                            Задания внутри файла script.js
+                        </div>
+                    </article>
+
+                    <article class="homework__video">
+                        <h2 class="title">Строки в JAVASCRIPT</h2>
+                        <div class="answer">
+                            let fls = 'Фрилансер' <br>
+                            let text = 'Привет! Я ${fls}' <br>
+                            Текст из переменной fls не будет выведен, посколько используются обычные кавычки вместо
+                            обпратных
+                        </div>
+                        <div class="answer-text">Задание №2 внутри файла script.js</div>
+                        <div class="answer">let text = 123 + '456'; <br>
+                            При выводе в консоль мы получим строку '123456' так как оператор + не переводит тип данны
+                            при сложении строки и числа</div>
+                        <div class="answer-text">Задание №4 внутри файла script.js</div>
+                        <div class="answer-text">Задание №5 внутри файла script.js</div>
+                        <div class="answer">
+                            let text = 'фрилансер'; <br>
+                            console.log(textTest.includes('лан',4)); <br>
+                            Результат будет false, поскольку поиск совпадения начнется с 4 символа
+                        </div>
+                    </article>
+
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
