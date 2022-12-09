@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+   <title>JS</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <main class="page">
+         <div class="main__container">
+            <section class="homework">
+               <h1 class="homework__title">JAVASCRIPT</h1>
+
+               <article class="homework__video">
+                  <h2 class="title">Функции в JAVASCRIPT</h2>
+                  <div class="answer-photo">
+                     <img src="img/1.jpg" alt="img">
+                  </div>
+                  <div class="answer-text">
+                     Первым в консоль попадет "Коля", потому как движок браузера (или любой другой среды в которой
+                     выполняется наш JS код) первоначально исполняет основой код страницы и только потом возвращается к
+                     действиям которые были запланированы с задержкой, даже с нулевой. Для них есть отдельная "очередь
+                     планировщика событий(календарь)" <span>*(Прочитано несколько статей про Event Loop и "планировщики
+                        событий" "таски" и "микротаски", ответ фактически скатано с гугла и до конца так и не понятно
+                        как это работает :c )</span>
+                  </div>
+                  <div class="answer-photo">
+                     <img src="img/2.jpg" alt="img">
+                  </div>
+                  <div class="answer-text">
+                     Так как функция записана методом "объявления" мы можем вызывать ее еще до написания в коде.
+                  </div>
+                  <div class="answer-photo">
+                     <img src="img/3.jpg" alt="img">
+                  </div>
+                  <div class="answer-text">
+                     Так как функция записана в виде "выражения" - браузер не сможет запустить её до объявления в коде.
+                  </div>
+                  <div class="answer-photo">
+                     <img src="img/4.jpg" alt="img">
+                  </div>
+                  <div class="answer-text">
+                     Чтобы сделать функцию видимой за пределами своего блока нам нужно записать её в виде
+                     функционального выражения.
+                  </div>
+               </article>
+
+               <article class="homework__video">
+                  <h2 class="title">Массивы в JAVASCRIPT.</h2>
+                  <div class="answer-photo">
+                     <img src="img/5.jpg" alt="img">
+                  </div>
+                  <div class="answer-text">
+                     Длинна массива arr будет равна 4, поскольку ранее мы объявили, что он равен массиву newArr, после
+                     чего добавили в массив newArr еще одно значение.
+                  </div>
+
+                  <div class="answer-photo">
+                     <img src="img/6.jpg" alt="img">
+                  </div>
+                  <div class="answer-text">
+                     Переменная previousValue принимает значение первого объекта в массиве если она не назначена явно.
+                     previousValue = 9.
+
+                  </div>
+               </article>
+               <article class="homework__video">
+                  <h2 class="title">JavaScript Document object model (DOM)</h2>
+                  <div class="answer-photo">
+                     <img src="img/7.jpg" alt="img">
+                  </div>
+                  <div class="answer-text">
+                     Новый объект с контентом "Текст" появится в конце спика как третий пункт, так как указан параметр
+                     вставки 'beforeend' - внутри за последним дочерним элементом.
+                  </div>
+                  <div class="hidden" data-say-hi="yes">Привет!</div>
+                  <ul class="hidden">
+                     <li>Корчи</li>
+                     <li>Йончи</li>
+                  </ul>
+                  <div class="hidden">
+                     <div class="like"></div>
+                     <div class="subscribe"></div>
+                     <div class="like subscribe"></div>
+                  </div>
+                  <ul class="hidden" id="ul">
+                     <li>Пункт №1</li>
+                     <li>Пункт №2</li>
+                  </ul>
+               </article>
+
+            </section>
+         </div>
+      </main>
+   </div>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
